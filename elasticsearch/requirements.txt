@@ -1,0 +1,2 @@
+tqdm==4.62.2
+elasticsearch==7.14.1

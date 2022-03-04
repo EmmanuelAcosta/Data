@@ -1,0 +1,14 @@
+
+version: 2
+
+models:
+  - name: usuarios
+    description: 'Datos originales proporcionados por el equipo de dev.'
+    database: base_destino
+    schema: staging
+    +materialized: table
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - not_null

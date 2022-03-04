@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  airflow-webserver:
+    image: tap
+    container_name: tap-webserver
+    build: ./
+    env_file:
+      - example.env
+
+    ports:
+      - "8080:8080"
+    command: webserver
+
+  

@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  providers-api:
+    image: providers-api
+    container_name: tap-providers-api
+    build: ./
+    env_file:
+      - providers.env
+    volumes:
+      - ${LOCAL_PROVIDERS_API_PATH}/providers_api/:/root/providers_api/
+    ports:
+      - "8081:8081"

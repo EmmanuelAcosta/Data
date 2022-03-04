@@ -1,0 +1,16 @@
+jsonschema==3.0.1
+decorator==4.3
+apache-airflow-backport-providers-google==2021.3.3
+dbt==0.20.2
+gcsfs==2021.8.1
+pandas-gbq==0.14.1
+pandas==1.1.5
+selenium==3.141.0
+smart-open[gcs]
+numpy
+sqlalchemy
+airflow-dbt
+requests
+flake8
+parameterized
+tqdm
